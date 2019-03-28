@@ -1,3 +1,5 @@
+//! Generate a PNG image of a Mandelbrot set.
+//! From O'Reilly "Programming Rust".
 extern crate crossbeam;
 extern crate image;
 extern crate num;
