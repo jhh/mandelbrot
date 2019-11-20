@@ -12,7 +12,13 @@ use std::fs::File;
 use std::io;
 use std::str::FromStr;
 
-#[allow(dead_code)]
+/// Calculate escape time for given complex number.
+///
+/// # Arguments
+///
+/// * `c` - candidate for Mandelbrot set
+/// * `limit` - give up looking for escape after this number of iterations
+///
 fn escape_time(c: Complex<f64>, limit: u32) -> Option<u32> {
     let mut z = Complex { re: 0., im: 0. };
     for i in 0..limit {
